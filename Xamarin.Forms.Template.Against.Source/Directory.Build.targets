@@ -1,6 +1,7 @@
 <Project>
 
-  <Target Name="EnsureBuildTasks" BeforeTargets="CoreCompile" >
+  <Target Name="EnsureBuildTasks" BeforeTargets="BeforeCompile" >
+      <Message Text="EnsureBuildTasks is running" />
       <MSBuild Projects="$(XamarinFormsSource)\Xamarin.Forms.Build.Tasks\Xamarin.Forms.Build.Tasks.csproj"
         Properties="Configuration=$(Configuration)"/>
   </Target>
