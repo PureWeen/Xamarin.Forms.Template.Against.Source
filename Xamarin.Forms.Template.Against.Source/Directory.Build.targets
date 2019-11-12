@@ -1,5 +1,9 @@
 <Project>
 
+  <Target Name="EnsureBuildTasks" BeforeTargets="CoreCompile" >
+      <MSBuild Projects="$(XamarinFormsSource)\Xamarin.Forms.Build.Tasks\Xamarin.Forms.Build.Tasks.csproj"
+        Properties="Configuration=$(Configuration)"/>
+  </Target>
 
   <PropertyGroup>
     <XFDisableTargetsValidation>True</XFDisableTargetsValidation>
