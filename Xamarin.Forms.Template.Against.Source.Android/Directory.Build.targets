@@ -27,6 +27,10 @@
       <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
 
+    <ProjectReference Include="$(XamarinFormsSource)Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj" >
+      <Name>Xamarin.Forms.Xaml</Name>
+    </ProjectReference>
+    
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
