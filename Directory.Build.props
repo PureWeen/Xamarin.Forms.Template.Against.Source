@@ -1,0 +1,3 @@
+<Project>
+  <Import Project="Xamarin.Forms\SampleImports\Directory.Build.props" />
+ </Project>
